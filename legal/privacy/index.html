@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A0A0C" />
+    <title>Privacy Policy - Hard Rock Collector</title>
+    <meta
+      name="description"
+      content="How Hard Rock Collector collects, uses, and protects your personal data. GDPR- and CCPA-aware privacy policy."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://hrc.itropical-live-solutions.com/legal/privacy/" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/">
+          <img class="brand-mark" src="/assets/icon-96.png" alt="" width="36" height="36" />
+          <span class="brand-name">Hard Rock Collector</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/support/">Support</a>
+          <a href="/legal/privacy/" aria-current="page">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+      </section>
+
+      <article class="prose">
+        <nav class="toc" aria-label="Table of contents">
+          <h2>Contents</h2>
+          <ol>
+            <li><a href="#who">Who we are</a></li>
+            <li><a href="#data">What data we collect</a></li>
+            <li><a href="#why">Why we collect it (legal basis)</a></li>
+            <li><a href="#location">Location data</a></li>
+            <li><a href="#third-parties">Third parties &amp; processors</a></li>
+            <li><a href="#retention">How long we keep your data</a></li>
+            <li><a href="#rights">Your rights</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#transfers">International transfers</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#changes">Changes to this policy</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="who">1. Who we are</h2>
+        <p>
+          "Hard Rock Collector" (the "App") is an independent, non-commercial fan project published by the project
+          contributors. It is not affiliated with, endorsed by, or sponsored by Hard Rock International. This policy
+          explains what data we collect when you use the App, why, and what you can do about it.
+        </p>
+        <p>
+          For any privacy question or request, email <a href="mailto:support@itropical-live-solutions.com">support@itropical-live-solutions.com</a>.
+        </p>
+
+        <h2 id="data">2. What data we collect</h2>
+        <p>We deliberately collect as little data as possible. We do <strong>not</strong> collect your name, email
+        address, payment information, advertising identifiers, contacts, photos, browsing history, or device
+        fingerprints. We do <strong>not</strong> embed any third-party analytics, advertising, or tracking SDK.</p>
+        <p>The data we do collect, all tied to your account on our backend:</p>
+        <ul>
+          <li><strong>Apple user identifier</strong> (the opaque <code>sub</code> returned by Sign in with Apple). This is how we recognize your account across devices.</li>
+          <li><strong>Display name</strong> - the handle you choose; user-editable. Visible to friends and on leaderboards.</li>
+          <li><strong>Check-in records</strong> - café identifier, timestamp, the coordinates you submitted at check-in, and the GPS accuracy reading at that moment.</li>
+          <li><strong>Achievement progress, XP, streak data</strong> - derived from your check-ins.</li>
+          <li><strong>Friendships</strong> - the user IDs of accounts you've added as friends.</li>
+          <li><strong>APNs device token</strong>, if you grant push notification permission, so we can deliver notifications you've opted in to.</li>
+          <li><strong>Subscription status</strong> - whether you have an active "Collector Plus" subscription. Apple handles all payment; we only see "active / not active".</li>
+        </ul>
+        <p>
+          We also keep minimal <strong>server access logs</strong> (request method, route, status code, truncated IP, timestamp)
+          for a short period to detect abuse and debug outages. Logs are not used for analytics or profiling.
+        </p>
+
+        <h2 id="why">3. Why we collect it (legal basis)</h2>
+        <p>For users in the EU/EEA and UK, the lawful basis under GDPR Article 6:</p>
+        <ul>
+          <li><strong>Account &amp; check-in data</strong> - necessary to perform the contract you entered when you signed in (Art. 6(1)(b)). Without it, the App cannot function.</li>
+          <li><strong>Anti-abuse logging &amp; rate limiting</strong> - our legitimate interest in keeping the service available and fair (Art. 6(1)(f)).</li>
+          <li><strong>Push notifications</strong> - your explicit consent, given when you grant permission in iOS (Art. 6(1)(a)). You can revoke it any time in iOS Settings.</li>
+        </ul>
+        <p>For users in California (CCPA/CPRA): we do not "sell" or "share" your personal information as those terms are defined under CCPA.</p>
+
+        <h2 id="location">4. Location data</h2>
+        <p>
+          The App requests "When In Use" location access. Your location is read on your device only at the
+          moment you tap the check-in button - never in the background, never continuously. The reading is sent to our
+          server so we can verify you are physically at the café (Haversine distance + GPS accuracy ceiling). The
+          server stores the coordinates and accuracy reading as part of the check-in record so the visit can be proven
+          later; we do <strong>not</strong> build a movement profile, location history, or heat map.
+        </p>
+        <p>
+          You can revoke location permission any time in <strong>iOS Settings → Privacy &amp; Security → Location
+          Services → Hard Rock Collector</strong>. Without it, you can browse the catalog but cannot check in.
+        </p>
+
+        <h2 id="third-parties">5. Third parties &amp; processors</h2>
+        <p>We rely on a small number of third parties - none of them receive marketing data or user profiles:</p>
+        <ul>
+          <li><strong>Apple Inc.</strong> - Sign in with Apple (authentication), APNs (push delivery), App Store (subscription billing). Governed by Apple's privacy policy.</li>
+          <li><strong>Railway Corp.</strong> - our hosting provider in the United States. They run the Vapor server and the managed Postgres database; they are a data processor under our instructions.</li>
+        </ul>
+        <p>We do not use Google Analytics, Facebook Pixel, Mixpanel, Segment, Firebase, AppsFlyer, Crashlytics, or any comparable SDK.</p>
+
+        <h2 id="retention">6. How long we keep your data</h2>
+        <p>
+          Your account data is kept for as long as your account exists. When you delete your account in
+          <strong>Profile → Settings → Delete Account</strong>, your check-ins, achievements, friendships, profile,
+          display name, and APNs token are deleted from our database immediately. There is no soft-delete and no
+          recovery window. Server access logs are rotated and purged within 30 days.
+        </p>
+
+        <h2 id="rights">7. Your rights</h2>
+        <p>Wherever you are in the world, you can:</p>
+        <ul>
+          <li>Access the data we hold about you (most of it is visible inside the App on your profile).</li>
+          <li>Correct your display name in the App.</li>
+          <li>Delete your account and all associated data via <strong>Settings → Delete Account</strong>.</li>
+          <li>Withdraw push consent in iOS Settings.</li>
+        </ul>
+        <p>If you are in the EU/EEA or UK, you additionally have GDPR rights to portability, restriction, objection, and to lodge a complaint with your local supervisory authority. Email <a href="mailto:support@itropical-live-solutions.com">support@itropical-live-solutions.com</a> for any data request - we respond within 30 days.</p>
+
+        <h2 id="children">8. Children</h2>
+        <p>
+          The App is not directed to children under 13. Sign in with Apple itself requires you to be at least 13 in
+          most regions (older in some). If you believe a child under the applicable minimum age has created an account,
+          email us and we will delete it.
+        </p>
+
+        <h2 id="transfers">9. International transfers</h2>
+        <p>
+          Our servers are hosted by Railway in the United States. If you use the App from the EU/EEA or UK, your data
+          will be transferred to the US for processing. We rely on the relevant Standard Contractual Clauses with our
+          processor where required by law.
+        </p>
+
+        <h2 id="security">10. Security</h2>
+        <p>
+          Traffic between the App and our server is encrypted with HTTPS/TLS. Your session is bound to a short-lived
+          token verified server-side. We never see or store your Apple password. We use only operating-system-provided
+          cryptography (TLS, Sign in with Apple, CryptoKit SHA-256, Keychain, JWT HS256) - no custom crypto.
+        </p>
+        <p>
+          No system is perfectly secure. If we discover a breach that affects you, we will notify affected users and
+          relevant authorities as required by law.
+        </p>
+
+        <h2 id="changes">11. Changes to this policy</h2>
+        <p>
+          We may update this policy as the App evolves. Material changes will be announced in-app and the "Effective
+          date" below will be updated. Continued use of the App after an update means you accept the revised policy.
+        </p>
+
+        <h2 id="contact">12. Contact</h2>
+        <p>
+          Questions, complaints, or data requests:
+          <a href="mailto:support@itropical-live-solutions.com">support@itropical-live-solutions.com</a>.
+        </p>
+
+        <p class="effective-date">Effective date: 2026-05-28</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="/">
+            <img class="brand-mark" src="/assets/icon-96.png" alt="" width="36" height="36" />
+            <span class="brand-name">Hard Rock Collector</span>
+          </a>
+          <p>Collect the world - one café at a time. An independent iOS app for travelers and collectors.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/support/">Support</a>
+          <a href="/legal/privacy/">Privacy</a>
+          <a href="/legal/terms/">Terms</a>
+          <a href="/legal/eula/">EULA</a>
+        </nav>
+      </div>
+      <p class="copy" style="text-align:center">© 2026 Hard Rock Collector · ITropical Live Solutions</p>
+    </footer>
+
+    <script src="/config.js"></script>
+  </body>
+</html>

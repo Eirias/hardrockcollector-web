@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A0A0C" />
+    <title>Hard Rock Collector - Collect the world, one café at a time</title>
+    <meta
+      name="description"
+      content="A premium dark-mode iOS app for collectors. GPS-validated check-ins, badges, achievements, streaks, and leaderboards for every Hard Rock Café you visit."
+    />
+    <meta name="author" content="ITropical Live Solutions" />
+    <link rel="canonical" href="https://hrc.itropical-live-solutions.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hard Rock Collector" />
+    <meta
+      property="og:description"
+      content="GPS check-ins, badges, achievements, friends, and leaderboards. Built for collectors who treat every Hard Rock Café like a stamp in their passport."
+    />
+    <meta property="og:url" content="https://hrc.itropical-live-solutions.com/" />
+    <meta property="og:image" content="https://hrc.itropical-live-solutions.com/apple-touch-icon.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Hard Rock Collector",
+        "operatingSystem": "iOS 17+",
+        "applicationCategory": "TravelApplication",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "GPS check-ins, badges, achievements, and leaderboards for Hard Rock Café collectors."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/">
+          <img class="brand-mark" src="/assets/icon-96.png" alt="" width="36" height="36" />
+          <span class="brand-name">Hard Rock Collector</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/support/">Support</a>
+          <a href="/legal/privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container">
+        <img
+          class="hero-mark"
+          src="/assets/icon-256.png"
+          alt="Hard Rock Collector app icon"
+          width="128"
+          height="128"
+        />
+        <p class="eyebrow">Unofficial community app · iOS</p>
+        <h1>Hard Rock Collector</h1>
+        <p class="tagline">Collect the world - one café at a time.</p>
+        <p class="lead">
+          GPS check-ins, badges, achievements, friends, and live leaderboards.
+          Built for collectors who treat every Hard Rock Café like a stamp in their passport.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#" data-app-store-link aria-disabled="true">App Store - coming soon</a>
+          <a class="btn ghost" href="#how">How it works</a>
+          <a class="btn ghost hidden" href="#" data-github-link hidden>Source on GitHub</a>
+        </div>
+      </section>
+
+      <section class="container" aria-label="Features">
+        <h2 class="section-title">Built for the chase</h2>
+        <div class="grid">
+          <article class="tile">
+            <span class="tile-icon" aria-hidden="true">🗺</span>
+            <h3>Discover</h3>
+            <p>Every café on the world map. Filter by visited, nearby, legendary, or legacy.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-icon" aria-hidden="true">📍</span>
+            <h3>Check in</h3>
+            <p>Prove you were there with on-site GPS validation. Fair play, no remote spoofing.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-icon" aria-hidden="true">🏅</span>
+            <h3>Collect</h3>
+            <p>Unlock badges, XP, streaks, and achievements. Track countries and rarest stamps.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-icon" aria-hidden="true">🏆</span>
+            <h3>Compete</h3>
+            <p>Climb global and friends leaderboards. Watch the live activity feed light up.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-label="World map" class="container">
+        <h2 class="section-title">Every café on Earth</h2>
+        <p class="lead" style="text-align:center; margin: 0 auto var(--space-lg)">
+          <span id="map-count">179</span> known Hard Rock Cafés worldwide - scroll, zoom, and tap a pin to see the spot
+          your next stamp lives.
+        </p>
+        <div class="map-wrap">
+          <div id="world-map" role="application" aria-label="Interactive world map of Hard Rock Cafés"></div>
+          <div class="map-legend" aria-hidden="true">
+            <span><i style="background:#E8B440"></i> Open</span>
+            <span><i style="background:#FF3B5C"></i> Closed (legacy)</span>
+            <span><i style="background:#4FB2FF"></i> Coming soon</span>
+          </div>
+        </div>
+        <p class="map-note">
+          Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>
+          contributors · tiles by <a href="https://carto.com/attributions" rel="noopener">CARTO</a>.
+        </p>
+      </section>
+
+      <section aria-label="App highlights">
+        <div class="container">
+          <h2 class="section-title">Your rock tour, documented</h2>
+        </div>
+        <div class="container">
+          <div class="screenshots" role="list">
+            <img class="shot" role="listitem" src="/assets/screen-01-map.png" alt="World map view with cafés as colored pins" loading="lazy" />
+            <img class="shot" role="listitem" src="/assets/screen-02-collection.png" alt="Personal collection grid with badges and stamps" loading="lazy" />
+            <img class="shot" role="listitem" src="/assets/screen-03-feed.png" alt="Live activity feed showing friend check-ins" loading="lazy" />
+            <img class="shot" role="listitem" src="/assets/screen-04-more.png" alt="Profile screen with stats and achievements" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="container">
+        <h2 class="section-title">Three taps to your next stamp</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Sign in with Apple</h3>
+            <p>No passwords, no email lists. One tap and your collection is yours, on every device you own.</p>
+          </div>
+          <div class="step">
+            <h3>Walk into a café</h3>
+            <p>Get within 25 meters and the check-in button lights up. GPS does the rest.</p>
+          </div>
+          <div class="step">
+            <h3>Earn the stamp</h3>
+            <p>Badges, XP, streaks, and achievements unlock automatically. New country? New flag in your gallery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="trust">
+          <h2>Fair play, built in.</h2>
+          <p>
+            Hard Rock Collector validates every check-in against the server. The app rejects you if you're more than 25 meters
+            away. The server then re-computes the distance from your raw coordinates and rejects anything with GPS accuracy
+            worse than 200 meters. You can't farm a café twice. You can't spoof from your couch. The leaderboard means something.
+          </p>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 class="section-title">Privacy at a glance</h2>
+        <div class="trust">
+          <ul class="bullets">
+            <li>Sign in with Apple only - no email lists, no passwords.</li>
+            <li>No ads, no tracking, no third-party analytics SDKs.</li>
+            <li>Location is read only when you tap check-in. No background tracking.</li>
+            <li>Delete your account in Settings - server data is wiped immediately.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="stats">
+          <div>
+            <span class="stat-num">80+</span>
+            <span class="stat-label">Cafés in the catalog</span>
+          </div>
+          <div>
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Countries on the map</span>
+          </div>
+          <div>
+            <span class="stat-num">0</span>
+            <span class="stat-label">Tracking SDKs</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="disclaimer">
+          <p>
+            <strong>Disclaimer.</strong> Hard Rock Collector is an independent fan project. It is not affiliated with,
+            endorsed by, or sponsored by Hard Rock International. No official trademarks or logos are used - only an
+            original design language inspired by the rock, travel, and lounge aesthetic.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="/">
+            <img class="brand-mark" src="/assets/icon-96.png" alt="" width="36" height="36" />
+            <span class="brand-name">Hard Rock Collector</span>
+          </a>
+          <p>Collect the world - one café at a time. An independent iOS app for travelers and collectors.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/support/">Support</a>
+          <a href="/legal/privacy/">Privacy</a>
+          <a href="/legal/terms/">Terms</a>
+          <a href="/legal/eula/">EULA</a>
+        </nav>
+      </div>
+      <p class="copy" style="text-align:center">© 2026 Hard Rock Collector · ITropical Live Solutions</p>
+    </footer>
+
+    <!--
+      Production: replace <script src="/config.js"></script> below or prepend
+      <script>window.HRC_CONFIG = { appStoreUrl: "https://apps.apple.com/app/idXXXXXXXXXX", githubUrl: "..." };</script>
+    -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="/map.js" defer></script>
+    <script src="/config.js"></script>
+  </body>
+</html>

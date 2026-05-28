@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local config overrides (do not commit production URLs)
+config.local.js
+.env
+.env.local
+
+# Build / cache (none expected — this is a static site)
+node_modules/
+.cache/
+dist/

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hrc.itropical-live-solutions.com/sitemap.xml
