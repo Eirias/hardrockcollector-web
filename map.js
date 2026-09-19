@@ -25,8 +25,10 @@
   // Re-enable scroll-zoom once the user has interacted with the map
   map.once("focus click", function () { map.scrollWheelZoom.enable(); });
 
-  // Carto Dark Matter - free, no API key, fits the dark theme
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  // Carto Dark Matter, fits the dark theme. The key is public by design:
+  // CARTO restricts it by referer to hrc.itropical-live-solutions.com.
+  var CARTO_KEY = "cb1_3qa6_1_1fc10109b11021dab258265b";
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=" + CARTO_KEY, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: "abcd",
     maxZoom: 19,
