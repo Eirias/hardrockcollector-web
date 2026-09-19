@@ -1,6 +1,6 @@
 {
   "version": "2026-09-19",
-  "count": 162,
+  "count": 175,
   "cafes": [
     {
       "id": "hard-rock-cafe-dubai-ae",
@@ -1944,6 +1944,162 @@
       "status": "open",
       "rarity": "common",
       "hrc_number": "#275",
+      "opened_year": 2019
+    },
+    {
+      "id": "hard-rock-cafe-new-york-57th-street-us",
+      "name": "Hard Rock Cafe New York (57th Street)",
+      "city": "New York",
+      "country": "United States",
+      "lat": 40.76599,
+      "lng": -73.98093,
+      "status": "closed",
+      "rarity": "legendary",
+      "hrc_number": "#5",
+      "opened_year": 1984
+    },
+    {
+      "id": "hard-rock-cafe-houston-kirby-us",
+      "name": "Hard Rock Cafe Houston (Kirby Drive)",
+      "city": "Houston",
+      "country": "United States",
+      "lat": 29.74076,
+      "lng": -95.41867,
+      "status": "closed",
+      "rarity": "rare",
+      "hrc_number": "#9",
+      "opened_year": 1986
+    },
+    {
+      "id": "hard-rock-cafe-osaka-minamihonmachi-jp",
+      "name": "Hard Rock Cafe Osaka (Minamihonmachi)",
+      "city": "Osaka",
+      "country": "Japan",
+      "lat": 34.6826,
+      "lng": 135.50163,
+      "status": "closed",
+      "rarity": "rare",
+      "hrc_number": "#31",
+      "opened_year": 1992
+    },
+    {
+      "id": "hard-rock-cafe-berlin-meinekestrasse-de",
+      "name": "Hard Rock Cafe Berlin (Meinekestraße)",
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.50139,
+      "lng": 13.32922,
+      "status": "closed",
+      "rarity": "rare",
+      "hrc_number": "#33",
+      "opened_year": 1992
+    },
+    {
+      "id": "hard-rock-cafe-manchester-gb",
+      "name": "Hard Rock Cafe Manchester",
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "lat": 53.48526,
+      "lng": -2.24037,
+      "status": "closed",
+      "rarity": "rare",
+      "hrc_number": "#113",
+      "opened_year": 2000
+    },
+    {
+      "id": "hard-rock-cafe-pittsburgh-us",
+      "name": "Hard Rock Cafe Pittsburgh",
+      "city": "Pittsburgh",
+      "country": "United States",
+      "lat": 40.43397,
+      "lng": -80.00491,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#127",
+      "opened_year": 2002
+    },
+    {
+      "id": "hard-rock-cafe-louisville-us",
+      "name": "Hard Rock Cafe Louisville",
+      "city": "Louisville",
+      "country": "United States",
+      "lat": 38.25214,
+      "lng": -85.75771,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#137",
+      "opened_year": 2004
+    },
+    {
+      "id": "hard-rock-cafe-helsinki-fi",
+      "name": "Hard Rock Cafe Helsinki",
+      "city": "Helsinki",
+      "country": "Finland",
+      "lat": 60.1692,
+      "lng": 24.94169,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#196",
+      "opened_year": 2012
+    },
+    {
+      "id": "hard-rock-cafe-ibiza-es",
+      "name": "Hard Rock Cafe Ibiza",
+      "city": "Ibiza",
+      "country": "Spain",
+      "lat": 38.90951,
+      "lng": 1.43478,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#201",
+      "opened_year": 2013
+    },
+    {
+      "id": "hard-rock-cafe-kota-kinabalu-my",
+      "name": "Hard Rock Cafe Kota Kinabalu",
+      "city": "Kota Kinabalu",
+      "country": "Malaysia",
+      "lat": 5.97711,
+      "lng": 116.06868,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#224",
+      "opened_year": 2015
+    },
+    {
+      "id": "hard-rock-cafe-pretoria-za",
+      "name": "Hard Rock Cafe Pretoria",
+      "city": "Pretoria",
+      "country": "South Africa",
+      "lat": -25.78266,
+      "lng": 28.27507,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#242",
+      "opened_year": 2016
+    },
+    {
+      "id": "hard-rock-cafe-houston-airport-us",
+      "name": "Hard Rock Cafe Houston Airport",
+      "city": "Houston",
+      "country": "United States",
+      "lat": 29.98605,
+      "lng": -95.3458,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#248",
+      "opened_year": 2017
+    },
+    {
+      "id": "hard-rock-cafe-london-oxford-street-gb",
+      "name": "Hard Rock Cafe Oxford Street London",
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": 51.51403,
+      "lng": -0.15925,
+      "status": "closed",
+      "rarity": "common",
+      "hrc_number": "#269",
       "opened_year": 2019
     }
   ]
