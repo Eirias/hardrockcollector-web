@@ -184,7 +184,8 @@ a:hover { text-decoration: underline; text-decoration-color: var(--primary-deep)
 .container {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--space-lg);
+  /* inline only: the shorthand zeroed the vertical padding of every section.container */
+  padding-inline: var(--space-lg);
 }
 .container-narrow {
   max-width: var(--max-reading);
