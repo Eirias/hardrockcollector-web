@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-19",
+  "version": "2026-09-24",
   "count": 175,
   "cafes": [
     {
@@ -69,7 +69,7 @@
       "country": "Argentina",
       "lat": -31.289558,
       "lng": -64.193086,
-      "status": "open",
+      "status": "closed",
       "rarity": "common",
       "hrc_number": "#309",
       "opened_year": 2023
@@ -225,7 +225,7 @@
       "country": "Brazil",
       "lat": -3.741667,
       "lng": -38.473458,
-      "status": "open",
+      "status": "closed",
       "rarity": "common",
       "hrc_number": "#267",
       "opened_year": 2019
@@ -333,7 +333,7 @@
       "country": "Canada",
       "lat": 43.65665412475884,
       "lng": -79.38074259583352,
-      "status": "open",
+      "status": "coming_soon",
       "rarity": "legendary",
       "hrc_number": "#2",
       "opened_year": 1978
@@ -573,7 +573,7 @@
       "country": "Spain",
       "lat": 40.418437,
       "lng": -3.7073207,
-      "status": "open",
+      "status": "coming_soon",
       "rarity": "common",
       "hrc_number": null,
       "opened_year": null
@@ -945,7 +945,7 @@
       "country": "",
       "lat": 17.96514012167344,
       "lng": 102.6062438540694,
-      "status": "open",
+      "status": "closed",
       "rarity": "common",
       "hrc_number": "#232",
       "opened_year": 2023
@@ -1149,7 +1149,7 @@
       "country": "",
       "lat": 6.4226444,
       "lng": 3.4419286,
-      "status": "open",
+      "status": "closed",
       "rarity": "common",
       "hrc_number": "#230",
       "opened_year": 2015
